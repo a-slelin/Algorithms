@@ -39,6 +39,7 @@
 
     <modules>
         <module>Sort</module>
+        <module>LeetCode</module>
     </modules>
 
     <properties>
