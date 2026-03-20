@@ -1,12 +1,12 @@
-package a.slelin.work.algorithms.leetcode.test.ninth;
+package a.slelin.work.algorithms.leetcode.test.task0009;
 
-import a.slelin.work.algorithms.leetcode.ninth.Solution;
+import a.slelin.work.algorithms.leetcode.task0009.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PalindromeNumberTest {
+public class SimpleTest {
 
     @Test
     public void test1() {

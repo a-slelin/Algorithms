@@ -1,6 +1,7 @@
-package a.slelin.work.algorithms.leetcode.ninth;
+package a.slelin.work.algorithms.leetcode.task0009;
 
 public class Solution {
+
     public boolean isPalindrome(int x) {
         if (x >= 0) {
             int check = 0, tmp = x;

@@ -1,11 +1,11 @@
-package a.slelin.work.algorithms.leetcode.test.first;
+package a.slelin.work.algorithms.leetcode.test.task0001;
 
-import a.slelin.work.algorithms.leetcode.first.Solution;
+import a.slelin.work.algorithms.leetcode.task0001.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TwoSumTest {
+public class SimpleTest {
 
     @Test
     public void test1() {
