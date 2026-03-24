@@ -42,6 +42,7 @@
         <module>LeetCode</module>
         <module>Acmp</module>
         <module>TBank</module>
+        <module>DynamicProgramming</module>
     </modules>
 
     <properties>
