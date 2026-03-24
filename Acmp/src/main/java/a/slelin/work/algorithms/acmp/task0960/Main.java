@@ -11,6 +11,8 @@ public class Main {
         String s = reader.readLine();
         if (s != null) {
             writer.print(solve(s.trim()));
+        } else {
+            writer.print(0);
         }
 
         reader.close();

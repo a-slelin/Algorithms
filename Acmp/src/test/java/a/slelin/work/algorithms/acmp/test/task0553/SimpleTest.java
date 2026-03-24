@@ -9,10 +9,7 @@ public class SimpleTest {
 
     @Test
     public void test1() {
-        int n = 3;
-        int[] m = {0, 34, 29, 4};
-        int[] k = {0, 29, 4, 15};
-        long result = Main.solve(n, m, k);
+        long result = Main.solve(3, new int[]{0, 34, 29, 4}, new int[]{0, 29, 4, 15});
         assertEquals(646, result);
     }
 }

@@ -43,16 +43,16 @@ public class Main {
             }
 
             long r0 = pos % k;
+            long m2 = (curN - qn * k) / qn + 1;
             if (r0 % qp == 0) {
                 long r = r0 / qp;
-                long m2 = (curN - qn * k) / qn + 1;
                 if (r < m2) {
                     return totalRemoved + r * qn + (pos - r * qp) / k;
                 }
             }
 
+
             long m1 = r0 / qp + 1;
-            long m2 = (curN - qn * k) / qn + 1;
             long m = Math.min(m1, m2);
 
             pos -= m * qp;

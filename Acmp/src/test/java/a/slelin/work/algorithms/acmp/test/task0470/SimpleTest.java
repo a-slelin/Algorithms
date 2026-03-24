@@ -9,10 +9,9 @@ public class SimpleTest {
 
     @Test
     public void test1() {
-        int[][] grid = {
+        int result = Main.solve(new int[][]{
                 {5, 1, 2},
-                {6, 7, 3}
-        };
-        assertEquals(16, Main.solve(grid, 2, 1, 2, 3));
+                {6, 7, 3}}, 2, 1, 2, 3);
+        assertEquals(16, result);
     }
 }
