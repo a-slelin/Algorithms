@@ -1,4 +1,4 @@
-//package a.slelin.work.algorithms.tbank.task4;
+package a.slelin.work.algorithms.tbank.task4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) {
+    static void main() {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 
             StringTokenizer st = new StringTokenizer(reader.readLine());
