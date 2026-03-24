@@ -15,6 +15,10 @@
 
     <name>Algorithms::DynamicProgramming</name>
 
+    <modules>
+        <module>Laba1</module>
+    </modules>
+
     <properties>
         <version.plugin.shade>3.6.1</version.plugin.shade>
 
