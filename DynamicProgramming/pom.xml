@@ -17,6 +17,7 @@
 
     <modules>
         <module>Laba1</module>
+        <module>Laba2</module>
     </modules>
 
     <properties>
