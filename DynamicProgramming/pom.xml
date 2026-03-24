@@ -1,0 +1,61 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>a.slelin.work</groupId>
+        <artifactId>algorithms</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <groupId>a.slelin.work.algorithms</groupId>
+    <artifactId>dp</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>Algorithms::DynamicProgramming</name>
+
+    <modules>
+        <module>Laba1</module>
+        <module>Laba2</module>
+    </modules>
+
+    <properties>
+        <version.plugin.shade>3.6.1</version.plugin.shade>
+
+        <version.jansi>2.4.2</version.jansi>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--JAnsi-->
+            <dependency>
+                <groupId>org.fusesource.jansi</groupId>
+                <artifactId>jansi</artifactId>
+                <version>${version.jansi}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+
+        <pluginManagement>
+            <plugins>
+
+                <!--Plugin shade-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>${version.plugin.shade}</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+        <finalName>DynamicProgramming</finalName>
+
+    </build>
+
+</project>
