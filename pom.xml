@@ -41,6 +41,7 @@
         <module>Sort</module>
         <module>LeetCode</module>
         <module>Acmp</module>
+        <module>TBank</module>
     </modules>
 
     <properties>
