@@ -33,6 +33,7 @@ public class Main {
     }
 
     public static int solve(int n, int p, int[][] edges) {
+        @SuppressWarnings("unchecked")
         List<Integer>[] adj = new ArrayList[n + 1];
         for (int i = 1; i <= n; i++) adj[i] = new ArrayList<>();
         for (int[] edge : edges) {
