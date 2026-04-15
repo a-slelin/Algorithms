@@ -1,5 +1,6 @@
 package a.slelin.work.algorithms.dp.laba4;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -9,19 +10,36 @@ public class GameController {
 
     private final Scanner scanner;
 
+    private final Random random;
+
     private CoinRowGame game;
 
     private final int delimiterLength = 100;
 
     public GameController() {
         this.scanner = new Scanner(System.in);
+        this.random = new Random();
         this.game = null;
     }
 
     public void start() {
+        start(random.nextInt(5, 15));
+    }
+
+    public void start(int length) {
         printWelcome();
 
-        int[] initialCoins = {5, 10, 3, 8, 7, 2, 9, 4};
+        int[] initialCoins;
+
+        if (length < 5 || length > 15) {
+            throw new IllegalArgumentException("Длина ряда должна быть от 5 до 15.");
+        } else {
+            initialCoins = new int[length];
+            for (int i = 0; i < length; i++) {
+                initialCoins[i] = random.nextInt(100);
+            }
+        }
+
         game = new CoinRowGame(initialCoins);
 
         while (!game.isGameOver()) {
